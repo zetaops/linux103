@@ -1,0 +1,16 @@
+gun01/basit-bash/
+gun01/dosya-sistemleri/
+gun01/hello-world/
+gun01/izinler/
+gun01/linux-genel/
+gun02/basit-git-komutlari/
+gun02/basit-vim-komutlari/
+gun02/sanallastirma-notlari/
+gun02/vagrant-docker/
+gun03/apache-spark/
+gun03/ornek-proje/
+gun03/programlama-ortak-bolumler/
+gun03/python/
+gun03/python-veri-bilimi/
+gun04/erlang/
+gun04/gnu-c/
