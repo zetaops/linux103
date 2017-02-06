@@ -1,0 +1,28 @@
+{% extends 'flashcards/base.html' %}
+
+{% block jumbotron %}
+    {% if msg %}
+        <p>{{ msg }}</p>
+    {% else %}
+        <p class="lead">{{ content.question|linebreaks }}</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" role="button" data-toggle="collapse"
+               href="#questionAnswer"
+               aria-expanded="false" aria-controls="collapseExample">
+                Answer
+            </a>
+            <a class="btn btn-success btn-lg" role="button" href="
+{% url "correct" content.id %}">Correct</a>
+            <a class="btn btn-default btn-lg" role="button" href="
+{% url "next_card" content.id %}">Next</a>
+        </p>
+        <div class="collapse" id="questionAnswer">
+            <div class="well">
+                <p>{{ content.answer|linebreaks }}</p>
+            </div>
+        </div>
+        <hr class="my-2">
+        <p>{{ content.pub_date }}</p>
+    {% endif %}
+
+{% endblock %}
